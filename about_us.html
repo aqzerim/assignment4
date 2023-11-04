@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="UTF-8">
+			<title>	Glow Beauty</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+      <link rel="icon" href="images/favicon.png">
+      <link href="style.css" rel="stylesheet" type="text/css">
+    </head>
+
+
+
+		<body>
+      <div class="header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+          <div class="container">
+              <a class="navbar-brand" href="#">
+                  <img src="images/favicon.png" width="70" height="70" alt="">
+                  Glow Beauty
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav ml-auto">
+                      <li class="nav-item">
+                          <a class="nav-link" href="C:\Users\Акки\Desktop\Astana IT University\WEB Technologies\Assignment1\index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="C:\Users\Акки\Desktop\Astana IT University\WEB Technologies\Assignment1\products.html">Products</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="C:\Users\Акки\Desktop\Astana IT University\WEB Technologies\Assignment1\service.html">Service</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="C:\Users\Акки\Desktop\Astana IT University\WEB Technologies\Assignment1\about_us.html">About us</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+      </div>
+
+      <!---about us-->
+      
+      <section id="text">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8">
+              <h1 class="mt-5">Explore important information about us</h1>
+              <p>Click on the option you are interested in.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    <section id="interactive-elements" class="about-us-text" class="container">
+      <div class="tabs" style="margin-bottom: 20px;">
+          <button type="button" class="btn btn-primary" onclick="showTab('tab1')">About us</button>
+          <button type="button" class="btn btn-primary" onclick="showTab('tab2')">Location</button>
+          <button type="button" class="btn btn-primary" onclick="showTab('tab3')">Work schedule</button>
+      </div>
+  
+      <div id="tab1" class="tab-content">
+        <h1 class="mt-5">About Us</h1>
+        <p class="lead">Welcome to Glow Beauty, where beauty meets quality! We are passionate about providing high-quality beauty products that enhance your natural radiance and elevate your skincare routine.</p>
+    
+        <p>Our team is comprised of beauty experts and enthusiasts who are here to assist you on your journey to radiant skin and a confident self. We strive to create an online shopping experience that is not only convenient but also informative, guiding you towards the products that best suit your unique needs.</p>
+    
+        <p>Thank you for choosing Glow Beauty. Explore our collection, embrace your beauty, and let us be a part of your skincare story.</p>
+
+        <div id="founderAccordion" class="accordion">
+          <div class="card">
+              <div class="card-header" id="founderHeading">
+                  <h5 class="mb-0">
+                      <button class="btn btn-link" onclick="toggleAccordion('founderCollapse')" aria-expanded="true" aria-controls="founderCollapse" style="color:rgb(75, 53, 24)">
+                          Meet Our Founder
+                      </button>
+                  </h5>
+              </div>
+      
+              <div id="founderCollapse" class="collapse show align-items-center" aria-labelledby="founderHeading" data-parent="#founderAccordion">
+                  <div class="card-body text-center">
+                      <p><strong>Founder:</strong> Akzerim Askerbekkyzy</p>
+                      <p><strong>Phone Number:</strong> 87751590737</p>
+                      <p><strong>Social Media:</strong> <a href="https://instagram.com/aqzerim?igshid=NTc4MTIwNjQ2YQ==" target="_blank" style="color:rgb(75, 53, 24)">Instagram</a></p>
+                      <p>Explore the inspiring journey of our founder and her commitment to excellence.</p>
+                  </div>
+              </div>
+          </div>
+      </div>     
+      </div>
+  
+      <div id="tab2" class="tab-content" style="display: none;">
+          <h1 class="mt-5">Check out our address &#8595;</h1>
+          <div class="map-responsive" style="margin: 0 100px;">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2505.9543933324926!2d71.41613421571189!3d51.09084917956888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x424585a605525605%3A0x4dff4a1973f7567e!2sAstana%20IT%20University!5e0!3m2!1sru!2s!4v1613160085717!5m2!1sru!2s" width="1000" height="500" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+      </div>
+  
+      <div id="tab3" class="tab-content" style="display: none;">
+        <h1 class="mt-5">Schedule</h1>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <table class="table table-striped table-bordered table-hover centered">
+                <thead>
+                  <tr>
+                    <th scope="col">Days of week</th>
+                    <th scope="col">Working time</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Weekdays</td>
+                    <td>9:00 - 18:00</td>
+                  </tr>
+                  <tr>
+                    <td>Weekends</td>
+                    <td>9:00 - 15:00</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<section>
+  <div id="game">
+        <h2 style="text-align: center; margin: 10px 0 50px 0; color: #333;">Let's play!</h2>
+        <h3 style="text-align: center; margin-bottom: 40px; font-style: italic;">Find answers to questions about skincare and win our beauty-box</h3>
+        <div id="game-container">
+          <div class="options-container">
+            
+            <div class="item" id="cream" draggable="true" ondragstart="drag(event)">Cream</div>
+            <div class="item" id="aha" draggable="true" ondragstart="drag(event)">AHA-acids</div>
+            <div class="item" id="oil" draggable="true" ondragstart="drag(event)">Hydrophilic oil</div>
+          </div>
+          <div class="dropzones-container">
+            <div class="dropzone" id="hydro" ondrop="drop(event)" ondragover="allowDrop(event)">For hydration</div>
+            <div class="dropzone" id="1st" ondrop="drop(event)" ondragover="allowDrop(event)">1st step of cleansing</div>
+            <div class="dropzone" id="acne" ondrop="drop(event)" ondragover="allowDrop(event)">Anti acne</div>
+          </div>
+          <div id="result-container">
+            <div id="result"></div>
+          </div>
+        </div>
+
+        <div>
+          <h4 style="text-align: center; margin-top: 20px;">If you won click the button below</h4>
+          <button id="playSoundButton" class="btn btn-primary" style="margin-bottom: 30px;">Play Winner Sound</button>
+          <audio id="sound" src="sound.mp3"></audio>
+          <div id="successAlert" class="centered" ="display: none;">
+            <strong>Success!</strong> Please contact our founder on Instagram to receive a gift.
+          </div>
+          </div>
+</div>
+</section>
+
+      <footer class="footer" style="margin-top: 0;">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 footer-col-1">
+              <img src="images/googleplay.png" alt="Google Play" width="auto" height="100px">
+              <p class="android">Download App for Android mobile phone.</p>
+            </div>
+            <div class="col-md-6 footer-col-2">
+              <img src="images/App-Store-Logo.png" alt="App Store" width="auto" height="100px">
+              <p class="iphone">Download App for IOS mobile phone.</p>
+            </div>
+          </div>
+        </div>
+      </footer>      
+
+      <script src="script.js"></script>
+      <script src="https://code.jquery.com/jquery-3.6.4.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+
+        </body>
+    </html>
